@@ -1,0 +1,52 @@
+#
+# These things are run when an Openbox X Session is started.
+# You may place a similar script in $HOME/.config/openbox/autostart
+# to run user-specific things.
+#
+
+# If you want to use GNOME config tools...
+#
+#if test -x /usr/lib/x86_64-linux-gnu/gnome-settings-daemon >/dev/null; then
+#  /usr/lib/x86_64-linux-gnu/gnome-settings-daemon &
+#elif which gnome-settings-daemon >/dev/null 2>&1; then
+#  gnome-settings-daemon &
+#fi
+
+# Start Compositor
+compton -b --config ~/.config/compton.conf &
+
+# Start Polybar
+polybar top -c /home/blint/.config/polybar/space-theme &
+
+# Start Panel
+tint2 &
+
+# Set background image
+(sleep 1; nitrogen --restore) &
+
+# GNOME PolicyKit authentication
+/usr/lib/policykit-1-gnome/polkit-gnome-authentication-agent-1 &
+
+# Volume keys daemon
+xfce4-volumed &
+
+# Volume Icon
+(sleep 2; pnmixer) &
+
+##Clipboard Manager
+# (sleep 2; clipit) &
+
+# Turn off/on System Beep
+xset b off
+
+# Enable power management
+xfce4-power-manager &
+
+## XFCE4 Settings
+#xfsettingsd &
+
+# Network manager applet
+(sleep 5; nm-applet) &
+
+# Bluetooth manager applet
+# (sleep 5; blueman-applet) &

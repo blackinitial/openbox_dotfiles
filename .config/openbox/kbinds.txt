@@ -1,0 +1,73 @@
+2017-08-16	rc.xml KEYBINDS
+-------------------------------
+
+ 0	C-S-BackSpace   	openbox --reconfigure
+ 1	W-KP_1          	UnmaximizeFull
+ 2	W-KP_2          	UnmaximizeFull
+ 3	W-KP_3          	UnmaximizeFull
+ 4	W-KP_4          	UnmaximizeFull
+ 5	W-KP_5          	MaximizeFull
+ 6	W-KP_6          	UnmaximizeFull
+ 7	W-KP_7          	UnmaximizeFull
+ 8	W-KP_8          	UnmaximizeFull
+ 9	W-KP_9          	UnmaximizeFull
+10	C-A-Right       	DesktopRight
+11	C-A-Left        	GoToDesktop
+12	C-A-Up          	GoToDesktop
+13	C-A-Down        	GoToDesktop
+14	A-Tab           	NextWindow
+15	A-S-Tab         	PreviousWindow
+16	W-S-Right       	DirectionalCycleWindows
+17	W-S-Left        	DirectionalCycleWindows
+18	W-S-Up          	DirectionalCycleWindows
+19	W-S-Down        	DirectionalCycleWindows
+20	S-A-Left        	SendToDesktopLeft
+21	S-A-Right       	SendToDesktopRight
+22	S-A-Up          	SendToDesktopUp
+23	S-A-Down        	SendToDesktopDown
+24	A-Escape        	Lower
+25	A-space         	client-menu
+26	Print           	scrot '%Y-%m-%d--%s_$wx$h_scrot.png' -e 'mv $f ~/Pictures/ ; gpicview ~/Pic.....
+27	A-Print         	scrot -d 5 '%Y-%m-%d--%s_$wx$h_scrot.png' -e 'mv $f ~/Pictures/ ; gpicview .....
+28	C-Print         	xfce4-screenshooter
+29	A-F2            	rofi -show run -fullscreen True -lines 3 -line-margin 6 -padding 300 -bw 0 .....
+30	A-F3            	xfce4-appfinder
+31	A-F4            	Close
+32	A-F5            	Iconify
+33	A-F6            	ToggleMaximize
+34	A-F8            	ToggleDecorations
+35	W-d             	ToggleShowDesktop
+36	W-b             	ToggleDecorations
+37	W-f             	thunar
+38	W-t             	x-terminal-emulator
+39	W-w             	firefox
+40	W-l             	slimlock
+41	W-e             	mousepad
+42	W-h             	x-terminal-emulator -T 'htop task manager' -e htop
+43	W-v             	pavucontrol
+44	W-Escape        	xkill
+45	W-Tab           	client-list-combined-menu
+46	W-r             	xfce4-appfinder --collapsed
+47	W-space         	root-menu
+48	W-Right         	UnmaximizeFull
+49	W-Left          	UnmaximizeFull
+50	W-Up            	MaximizeFull
+51	W-Down          	UnmaximizeFull
+52	W-A-Left        	UnmaximizeFull
+53	W-A-Right       	UnmaximizeFull
+54	A-r             	Resize
+55	A-m             	Move
+56	S-W-q           	Close
+57	W-Return        	urxvt
+58	S-W-Return      	thunar
+59	W-F1            	chromium-browser
+60	W-F2            	firefox
+61	C-S-Escape      	xfce4-taskmanager
+62	C-A-space       	all-menu
+63	C-A-m           	xfce4-settings-manager
+64	C-A-j           	obmenu
+65	C-A-a           	xfce4-appfinder
+66	C-A-T           	urxvt
+67	C-A-d           	ToggleShowDesktop
+68	C-A-i           	nitrogen
+69	C-A-u           	obconf

@@ -1,0 +1,351 @@
+<?xml version="1.0" encoding="utf-8"?>
+<openbox_menu xmlns="http://openbox.org/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://openbox.org/                 file:///usr/share/openbox/menu.xsd">
+	<menu id="root-menu" label="Openbox 3">
+		<separator label="Main Menu"/>
+		<item label="Run A Program">
+			<action name="Execute">
+				<execute>xfce4-appfinder --collapsed</execute>
+			</action>
+		</item>
+		<menu id="root-menu-67226" label="Rus As Root (#)">
+			<item label="File Manager As Root">
+				<action name="Execute">
+					<execute>gksu thunar</execute>
+				</action>
+			</item>
+			<item label="Text Editor As Root">
+				<action name="Execute">
+					<execute>gksu mousepad</execute>
+				</action>
+			</item>
+			<item label="Terminal As Root">
+				<action name="Execute">
+					<execute>gksu xfce4-terminal</execute>
+				</action>
+			</item>
+			<item label="Run Program As Root">
+				<action name="Execute">
+					<execute>gksu</execute>
+				</action>
+			</item>
+		</menu>
+		<separator/>
+		<item label="Terminal emulator">
+			<action name="Execute">
+				<execute>x-terminal-emulator</execute>
+			</action>
+		</item>
+		<item label="File Manager">
+			<action name="Execute">
+				<execute>thunar</execute>
+			</action>
+		</item>
+		<item label="Web browser">
+			<action name="Execute">
+				<execute>x-www-browser</execute>
+			</action>
+		</item>
+		<!-- This requires the presence of the 'menu' package to work -->
+		<item label="Text Editor">
+			<action name="Execute">
+				<execute>mousepad</execute>
+			</action>
+		</item>
+		<menu execute="ob-menu" id="pipe-714053" label="Applications"/>
+		<separator/>
+		<menu id="root-menu-8365" label="Screenshot">
+			<item label="Screenshot Now">
+				<action name="Execute">
+					<execute>/usr/bin/s0</execute>
+				</action>
+			</item>
+			<item label="Screenshot In 5">
+				<action name="Execute">
+					<execute>/usr/bin/s5</execute>
+				</action>
+			</item>
+			<item label="Screenshot In 10">
+				<action name="Execute">
+					<execute>/usr/bin/s10</execute>
+				</action>
+			</item>
+			<item label="Screenshot Area">
+				<action name="Execute">
+					<execute>/usr/bin/sA</execute>
+				</action>
+			</item>
+			<item label="Screenshot Window">
+				<action name="Execute">
+					<execute>/usr/bin/sW</execute>
+				</action>
+			</item>
+		</menu>
+		<menu execute="al-places-pipemenu" id="pipe-684335" label="My Places"/>
+		<menu execute="al-recent-files-pipemenu" id="pipe-164328" label="Recent Files"/>
+		<menu execute="ob_clipboard_pipe_menu.py" id="pipe-424146" label="Clipboard"/>
+		<separator/>
+		<menu id="root-menu-665145" label="Preferences">
+			<menu id="root-menu-665145-551616" label="Desktop Looks">
+				<menu id="root-menu-665145-551616-531627" label="Light Desktops">
+					<item label="Blue Desktop">
+						<action name="Execute">
+							<execute>/usr/share/desktop-looks/scripts/light-blue</execute>
+						</action>
+					</item>
+					<item label="Brown Desktop">
+						<action name="Execute">
+							<execute>/usr/share/desktop-looks/scripts/light-brown</execute>
+						</action>
+					</item>
+					<item label="Green Desktop">
+						<action name="Execute">
+							<execute>/usr/share/desktop-looks/scripts/light-green</execute>
+						</action>
+					</item>
+					<item label="Orange Desktop">
+						<action name="Execute">
+							<execute>/usr/share/desktop-looks/scripts/light-orange</execute>
+						</action>
+					</item>
+					<item label="Pink Desktop">
+						<action name="Execute">
+							<execute>/usr/share/desktop-looks/scripts/light-pink</execute>
+						</action>
+					</item>
+					<item label="Purple Desktop">
+						<action name="Execute">
+							<execute>/usr/share/desktop-looks/scripts/light-purple</execute>
+						</action>
+					</item>
+					<item label="Red Desktop">
+						<action name="Execute">
+							<execute>/usr/share/desktop-looks/scripts/light-red</execute>
+						</action>
+					</item>
+					<item label="Yellow Desktop">
+						<action name="Execute">
+							<execute>/usr/share/desktop-looks/scripts/light-yellow</execute>
+						</action>
+					</item>
+					<separator/>
+					<item label="Preview Here ...">
+						<action name="Execute">
+							<execute>ou-light</execute>
+						</action>
+					</item>
+				</menu>
+				<menu id="root-menu-665145-551616-781627" label="Dark Desktops">
+					<item label="Blue Desktop">
+						<action name="Execute">
+							<execute>/usr/share/desktop-looks/scripts/dark-blue</execute>
+						</action>
+					</item>
+					<item label="Brown Desktop">
+						<action name="Execute">
+							<execute>/usr/share/desktop-looks/scripts/dark-brown</execute>
+						</action>
+					</item>
+					<item label="Green Desktop">
+						<action name="Execute">
+							<execute>/usr/share/desktop-looks/scripts/dark-green</execute>
+						</action>
+					</item>
+					<item label="Orange Desktop">
+						<action name="Execute">
+							<execute>/usr/share/desktop-looks/scripts/dark-orange</execute>
+						</action>
+					</item>
+					<item label="Pink Desktop">
+						<action name="Execute">
+							<execute>/usr/share/desktop-looks/scripts/dark-pink</execute>
+						</action>
+					</item>
+					<item label="Purple Desktop">
+						<action name="Execute">
+							<execute>/usr/share/desktop-looks/scripts/dark-purple</execute>
+						</action>
+					</item>
+					<item label="Red Desktop">
+						<action name="Execute">
+							<execute>/usr/share/desktop-looks/scripts/dark-red</execute>
+						</action>
+					</item>
+					<item label="Yellow Desktop">
+						<action name="Execute">
+							<execute>/usr/share/desktop-looks/scripts/dark-yellow</execute>
+						</action>
+					</item>
+					<separator/>
+					<item label="Preview Here ...">
+						<action name="Execute">
+							<execute>ou-dark</execute>
+						</action>
+					</item>
+				</menu>
+				<menu id="root-menu-665145-551616-451745" label="Dark Alternatives">
+					<item label="Blue Desktop">
+						<action name="Execute">
+							<execute>/usr/share/desktop-looks/scripts/dark-alt-blue</execute>
+						</action>
+					</item>
+					<item label="Brown Desktop">
+						<action name="Execute">
+							<execute>/usr/share/desktop-looks/scripts/dark-alt-brown</execute>
+						</action>
+					</item>
+					<item label="Green Desktop">
+						<action name="Execute">
+							<execute>/usr/share/desktop-looks/scripts/dark-alt-green</execute>
+						</action>
+					</item>
+					<item label="Orange Desktop">
+						<action name="Execute">
+							<execute>/usr/share/desktop-looks/scripts/dark-alt-orange</execute>
+						</action>
+					</item>
+					<item label="Pink Desktop">
+						<action name="Execute">
+							<execute>/usr/share/desktop-looks/scripts/dark-alt-pink</execute>
+						</action>
+					</item>
+					<item label="Purple Desktop">
+						<action name="Execute">
+							<execute>/usr/share/desktop-looks/scripts/dark-alt-purple</execute>
+						</action>
+					</item>
+					<item label="Red Desktop">
+						<action name="Execute">
+							<execute>/usr/share/desktop-looks/scripts/dark-alt-red</execute>
+						</action>
+					</item>
+					<item label="Yellow Desktop">
+						<action name="Execute">
+							<execute>/usr/share/desktop-looks/scripts/dark-alt-yellow</execute>
+						</action>
+					</item>
+					<separator/>
+					<item label="Preview Here ...">
+						<action name="Execute">
+							<execute>ou-dark-alt</execute>
+						</action>
+					</item>
+				</menu>
+			</menu>
+			<menu execute="ob-display.py" id="pipe-754249" label="Display Modes"/>
+			<menu execute="/usr/bin/al-compositor" id="pipe-465230" label="Compositor"/>
+			<menu execute="/usr/bin/al-tint2-pipemenu" id="pipe-785230" label="Tint2 Panel"/>
+			<separator/>
+			<item label="Wallpapers">
+				<action name="Execute">
+					<execute>nitrogen</execute>
+				</action>
+			</item>
+			<item label="Appearance">
+				<action name="Execute">
+					<execute>lxappearance</execute>
+				</action>
+			</item>
+			<item label="Notifications">
+				<action name="Execute">
+					<execute>xfce4-notifyd-config</execute>
+				</action>
+			</item>
+			<item label="Printing Services">
+				<action name="Execute">
+					<execute>system-config-printer</execute>
+				</action>
+			</item>
+			<item label="Power Management">
+				<action name="Execute">
+					<execute>xfce4-power-manager-settings</execute>
+				</action>
+			</item>
+			<item label="Pulseaudio Preferences">
+				<action name="Execute">
+					<execute>pavucontrol</execute>
+				</action>
+			</item>
+			<item label="Preferred Applications">
+				<action name="Execute">
+					<execute>exo-preferred-applications </execute>
+				</action>
+			</item>
+		</menu>
+		<menu execute="al-help-pipemenu" id="pipe-35551" label="Get Help"/>
+		<menu execute="al-kb-pipemenu" id="pipe-285459" label="Keybindings"/>
+		<separator/>
+		<menu id="client-list-menu"/>
+		<menu id="root-menu-312357" label="Openbox">
+			<menu id="client-list-combined-menu"/>
+			<item label="Openbox Menu Editor">
+				<action name="Execute">
+					<execute>obmenu</execute>
+				</action>
+			</item>
+			<separator/>
+			<item label="Configure Openbox">
+				<action name="Execute">
+					<execute>obconf</execute>
+				</action>
+			</item>
+			<item label="Reconfigure Openbox">
+				<action name="Reconfigure"/>
+			</item>
+			<item label="Restart Openbox">
+				<action name="Restart"/>
+			</item>
+			<item label="Exit Openbox">
+				<action name="Exit"/>
+			</item>
+		</menu>
+		<menu id="root-menu-52254" label="System">
+			<separator label="System"/>
+			<menu execute="ob-sysinfo.pl" id="pipe-56281" label="System Info"/>
+			<menu execute="ob-cpufreq.py" id="pipe-11280" label="CPU Info"/>
+			<separator/>
+			<item label="About Developer">
+				<action name="Execute">
+					<execute>dev-about</execute>
+				</action>
+			</item>
+			<item label="About Openunix">
+				<action name="Execute">
+					<execute>ou-about</execute>
+				</action>
+			</item>
+		</menu>
+		<menu id="root-menu-42292" label="Session">
+			<separator label="Session"/>
+			<item label="Lock">
+				<action name="Execute">
+					<execute>dm-tool lock</execute>
+				</action>
+			</item>
+			<item label="Logout">
+				<action name="Execute">
+					<execute>openbox --exit</execute>
+				</action>
+			</item>
+			<item label="Suspend">
+				<action name="Execute">
+					<execute>systemctl suspend</execute>
+				</action>
+			</item>
+			<item label="Hibernate">
+				<action name="Execute">
+					<execute>systemctl hibernate</execute>
+				</action>
+			</item>
+			<item label="Reboot">
+				<action name="Execute">
+					<execute>systemctl reboot</execute>
+				</action>
+			</item>
+			<item label="Shutdown">
+				<action name="Execute">
+					<execute>systemctl poweroff</execute>
+				</action>
+			</item>
+		</menu>
+	</menu>
+</openbox_menu>
